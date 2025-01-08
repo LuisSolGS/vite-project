@@ -10,7 +10,7 @@ export default function Entry(props) {
             </div>
             <div className="info-container">
                 <span className="country">{props.entry.country}</span>
-                <a href={props.entry.googleMapsLink} target="_blank">View on Google Maps</a>
+                <a href={props.entry.googleMapsLink} target="_blank">View on IGDB</a>
                 <h2 className="entry-title">{props.entry.title}</h2>
                 <p className="trip-dates">{props.entry.dates}</p>
                 <p className="entry-text">{props.entry.text}</p>
