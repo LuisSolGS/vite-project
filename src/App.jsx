@@ -5,12 +5,13 @@ import axios from "axios";
 
 export default function App() {
   const [entry, setEntry] = useState('loading');
+  const [plat, setPlat] = useState('all');
   let list = [];
 
   async function getListTopGames(platform = 'all'){
     axios.get('http://127.0.0.1:8000/members/?platform=' + platform)
     .then(function (res) {
-      //console.log(res.data);
+      console.log(`Pulling data for ${platform}`);
       for (let i = 0; i < res.data.length; i++){
         list.push({key : res.data[i].id, img : `https://images.igdb.com/igdb/image/upload/t_cover_big/${res.data[i].cover.image_id}.jpg`, title: res.data[i].name, text : res.data[i].summary})
       }
@@ -28,20 +29,20 @@ export default function App() {
     });
   }
 
-  if (entry == 'loading'){
-    getListTopGames()
-  }
+  useEffect(() => {
+    getListTopGames(plat);
+  },[plat]);
 
   return (
         <>
           <Header />
           <header>
             <nav>
-                <a href="#" onClick={() => getListTopGames('all')}>all</a>
-                <a href="#" onClick={() => getListTopGames('PC')}>PC</a>
-                <a href="#" onClick={() => getListTopGames('PlayStation')}>PlayStation</a>
-                <a href="#" onClick={() => getListTopGames('Xbox')}>Xbox</a>
-                <a href="#" onClick={() => getListTopGames('Switch')}>Nintendo Switch</a>
+                <a href="#" onClick={() => setPlat('all')}>all</a>
+                <a href="#" onClick={() => setPlat('PC')}>PC</a>
+                <a href="#" onClick={() => setPlat('PlayStation')}>PlayStation</a>
+                <a href="#" onClick={() => setPlat('Xbox')}>Xbox</a>
+                <a href="#" onClick={() => setPlat('Switch')}>Nintendo Switch</a>
             </nav>
           </header>
           <main className="container">
