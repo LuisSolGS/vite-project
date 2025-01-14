@@ -1,6 +1,7 @@
 import Header from "./Components/header";
 import React, { useState,useEffect } from 'react';
 import Entry from "./Components/entry";
+import Nav from "./Components/nav";
 import axios from "axios";
 
 export default function App() {
@@ -8,7 +9,7 @@ export default function App() {
   const [plat, setPlat] = useState('all');
   let list = [];
 
-  async function getListTopGames(platform = 'all'){
+  function getListTopGames(platform = 'all'){
     axios.get('http://127.0.0.1:8000/members/?platform=' + platform)
     .then(function (res) {
       console.log(`Pulling data for ${platform}`);
@@ -35,6 +36,7 @@ export default function App() {
 
   return (
         <>
+          <Nav />
           <Header />
           <header>
             <nav>

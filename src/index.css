@@ -105,3 +105,41 @@ article.journal-entry .main-image {
   -webkit-box-orient: vertical;  
   overflow: hidden;
 }
+
+nav ul {
+  list-style: none;
+  display: flex;
+  background-color: black;
+  margin-bottom: 20px;
+}
+
+nav ul li {
+  padding: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.current {
+  border-bottom: 4px solid white;
+}
+
+.searchGameBar {
+  float: right;
+}
+
+.searchGameBar input {
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 0px;
+  font-size: 17px;
+}
+
+.searchGameBar button {
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 0px;
+  font-size: 17px;
+}
