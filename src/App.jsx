@@ -13,8 +13,15 @@ export default function App() {
     axios.get('http://127.0.0.1:8000/members/?platform=' + platform)
     .then(function (res) {
       console.log(`Pulling data for ${platform}`);
+      console.log(res);
       for (let i = 0; i < res.data.length; i++){
-        list.push({key : res.data[i].id, img : `https://images.igdb.com/igdb/image/upload/t_cover_big/${res.data[i].cover.image_id}.jpg`, title: res.data[i].name, text : res.data[i].summary})
+        list.push({
+          key : res.data[i].id, 
+          id: res.data[i].id, 
+          img : `https://images.igdb.com/igdb/image/upload/t_cover_big/${res.data[i].cover.image_id}.jpg`, 
+          title: res.data[i].name, 
+          text : res.data[i].summary
+        })
       }
       setEntry(list.map((inst) => {
         return (

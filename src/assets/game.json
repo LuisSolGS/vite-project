@@ -1,0 +1,143 @@
+{
+    "id": 119171,
+    "cover": {
+        "id": 289025,
+        "image_id": "co670h"
+    },
+    "first_release_date": 1691020800,
+    "genres": [
+        {
+            "id": 12,
+            "name": "Role-playing (RPG)"
+        },
+        {
+            "id": 15,
+            "name": "Strategy"
+        },
+        {
+            "id": 16,
+            "name": "Turn-based strategy (TBS)"
+        },
+        {
+            "id": 24,
+            "name": "Tactical"
+        },
+        {
+            "id": 31,
+            "name": "Adventure"
+        }
+    ],
+    "name": "Baldur's Gate 3",
+    "platforms": [
+        {
+            "id": 170,
+            "name": "Google Stadia"
+        },
+        {
+            "id": 169,
+            "name": "Xbox Series X|S"
+        },
+        {
+            "id": 6,
+            "name": "PC (Microsoft Windows)"
+        },
+        {
+            "id": 167,
+            "name": "PlayStation 5"
+        },
+        {
+            "id": 14,
+            "name": "Mac"
+        }
+    ],
+    "similar_games": [
+        {
+            "id": 14394,
+            "name": "Battle Brothers"
+        },
+        {
+            "id": 26845,
+            "name": "Fire Emblem: Three Houses"
+        },
+        {
+            "id": 105049,
+            "name": "Remnant: From the Ashes"
+        },
+        {
+            "id": 55199,
+            "name": "Dragon: Marked for Death"
+        },
+        {
+            "id": 22387,
+            "name": "Legrand Legacy"
+        },
+        {
+            "id": 111253,
+            "name": "Vambrace: Cold Soul"
+        },
+        {
+            "id": 5550,
+            "name": "Tactics Ogre: Let Us Cling Together"
+        },
+        {
+            "id": 10297,
+            "name": "Fallen Enchantress"
+        },
+        {
+            "id": 2365,
+            "name": "Battle for Wesnoth"
+        },
+        {
+            "id": 5652,
+            "name": "Age of Wonders III"
+        }
+    ],
+    "storyline": "The land of Faerûn is in turmoil. Refugees cross the wilds, fleeing the helltorn stronghold of Elturel. A vicious cult marches across the Sword Coast, uniting every race of monsters and men under the banner of a cryptic god they call the Absolute. Chaos strikes at Faerûn's foundations, and none may escape its talons. Not even you.\n\nThe grotesque nautiloid ship appears out of nowhere, blotting out the sun. Its writhing tentacles snatch you from where you stand. The mind flayers have come, imprisoning you on their ship, infecting you with their horrid parasite. You will become one of them.\n\nBy fate or fortune, you survive when the nautiloid crashes in the Sword Coast outlands. You set out for civilisation, desperate for a cure for the parasite festering in your brain, only to take centre stage in a conspiracy that runs as deep as the Nine Hells. New enemies await.\n\nAs for old foes... the shadows stir.\nAnd all roads lead to the legendary city of Baldur's Gate.",
+    "summary": "An ancient evil has returned to Baldur's Gate, intent on devouring it from the inside out. The fate of Faerun lies in your hands. Alone, you may resist. But together, you can overcome.",
+    "themes": [
+        {
+            "id": 1,
+            "name": "Action"
+        },
+        {
+            "id": 17,
+            "name": "Fantasy"
+        }
+    ],
+    "total_rating": 95.27170941735115,
+    "url": "https://www.igdb.com/games/baldurs-gate-3",
+    "videos": [
+        {
+            "id": 34304,
+            "video_id": "jNY7AEQ59-8"
+        },
+        {
+            "id": 27759,
+            "video_id": "OcP0WdH7rTs"
+        },
+        {
+            "id": 37259,
+            "video_id": "o5xpbAsly48"
+        },
+        {
+            "id": 80611,
+            "video_id": "tavPnYeFrV4"
+        },
+        {
+            "id": 84917,
+            "video_id": "Ks-KF9iueE0"
+        },
+        {
+            "id": 91735,
+            "video_id": "zTX79cgruXE"
+        },
+        {
+            "id": 91736,
+            "video_id": "t0uYhTLPGLQ"
+        },
+        {
+            "id": 95037,
+            "video_id": "XuCfkgaaa08"
+        }
+    ]
+}

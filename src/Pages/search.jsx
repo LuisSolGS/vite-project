@@ -11,6 +11,7 @@ export default function Search() {
     function search(formData) {
         const query = formData.get("query");
         console.log(`You searched for '${query}'`);
+        searchForAGame(query);
     }
 
     function searchForAGame(query){
