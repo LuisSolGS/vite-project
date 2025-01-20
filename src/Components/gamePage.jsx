@@ -5,22 +5,24 @@ export default function GamePage(props) {
     const myDate = new Date(props.entry.release_date * 1000);
     return (
         <>
-        <h1>{props.entry.title}</h1>
-        <h3>{myDate.toDateString()}</h3>
-        <div>
-            <div className="info-container">
+        <div className="game-container">
+            <h1>{props.entry.title}</h1>
+            <h3>{myDate.toDateString()}</h3>
+            <div className="game-main">
                 <img 
-                    className="main-image"
+                    className="game-image"
                     src={props.entry.img}
                 />
-                <YoutubeEmbed embedId={props.entry.video} />
+                <YoutubeEmbed 
+                    embedId={props.entry.video} 
+                 />
             </div>
-            <div>
+            <div className="game-info">
                 <p>Genre: {props.entry.genre}</p>
                 <p>Platforms: {props.entry.platforms}</p>
                 <p>{props.entry.summary}</p>
             </div>
-            <div>
+            <div className="game-story">
                 <h2>Story</h2>
                 <p>{props.entry.storyline}</p>
             </div>

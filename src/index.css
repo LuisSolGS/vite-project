@@ -17,16 +17,13 @@ header {
   align-items: center;
   color: white;
   height: 55px;
-}
-
-header > img {
-  width: 24px;
-  margin-right: 7px;
+  margin: 0;
 }
 
 header > h1 {
   font-size: 2rem;
   font-weight: 500;
+  margin: 0;
 }
 
 header nav {
@@ -110,7 +107,7 @@ nav ul {
   list-style: none;
   display: flex;
   background-color: black;
-  margin-bottom: 20px;
+  margin: 0
 }
 
 nav ul li {
@@ -119,7 +116,13 @@ nav ul li {
 
 nav ul li a {
   color: white;
+  padding: 5px 10px;
   text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #555;
+  border-radius: 5px;
 }
 
 .current {
@@ -162,4 +165,41 @@ a {
   height: 100%;
   width: 100%;
   position: absolute;
+}
+
+.game-container {
+  margin: 5px;
+}
+
+.game-main {
+  background-color: #EEEEEE;
+  border-radius: 2.5%;
+  display: flex;
+  height: auto;
+  overflow: hidden;
+  align-items: center;
+}
+
+.game-main .game-image {
+  width: 20%;
+  border-radius: 5%;
+  margin: 5px;
+  border: 1px solid black;
+}
+
+.game-main .video-responsive {
+  width: 75%;
+  float: right;
+  border-radius: 2.5%;
+  margin: 5px;
+}
+
+.game-info {
+  margin: 5px;
+  padding: 5px;
+}
+
+.game-story {
+  margin: 5px;
+  padding: 5px;
 }

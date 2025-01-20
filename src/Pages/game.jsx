@@ -10,9 +10,9 @@ import axios from "axios";
 
 export default function Game(props) {
     const [entry, setEntry] = useState('loading');
-    const location = useLocation();
-    const id = location.state.from;
-    console.log(id);
+    //const location = useLocation();
+    //const id = location.state.from;
+    //console.log(id);
 
     function getGame(id){
         console.log(myData);
@@ -23,7 +23,7 @@ export default function Game(props) {
                 img : `https://images.igdb.com/igdb/image/upload/t_cover_big/${myData.cover.image_id}.jpg`,
                 video : myData.videos[0].video_id,
                 genre : myData.genres[0].name,
-                platforms : (() => {let concatenatedString = ''; for (let i = 0; i < myData.platforms.length; i++) {concatenatedString += myData.platforms[i].name + ", ";} return concatenatedString;})(),
+                platforms : (() => {let concatenatedString = myData.platforms[0].name; for (let i = 1; i < myData.platforms.length; i++) {concatenatedString += ", " + myData.platforms[i].name;} return concatenatedString;})(),
                 summary : myData.summary,
                 storyline : myData.storyline
             }
@@ -39,7 +39,6 @@ export default function Game(props) {
     return (
           <>
             <Nav />
-            <Header />
 {/*             <main>{JSON.stringify(entry)}</main> */}
             <GamePage entry = {entry}/>
           </>
